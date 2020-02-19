@@ -4,12 +4,13 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="musicanalysis.js"></script>
 
   </head>
   <body>
     <div class="container p-3 my-3 bg-dark text-white">
-        <h1>MODD SENTIMENTS ANALYSIS</h1>
+        <h1>MOOD SENTIMENTS ANALYSIS</h1>
         <br>
         <div id="change">
         <p>Hello</p>
@@ -18,12 +19,12 @@
         <button id="good" style="font-size:24px" onclick="fun1()"> <i class="material-icons" style="font-size:48px;color:green">mood</i>
             <button id="bad" style="font-size:24px" onclick="fun2()"> <i class="material-icons" style="font-size:48px;color:red">mood_bad</i>
         </div>
-        <button style="font-size:24px"> Pop <i class="material-icons">check_box</i></button>
-        <button style="font-size:24px">Rock <i class="material-icons">check_box</i></button>
-        <button style="font-size:24px">Jazz <i class="material-icons">check_box</i></button>
-        <button style="font-size:24px">Metal <i class="material-icons">check_box</i></button>
-        <button style="font-size:24px">Reggae <i class="material-icons">check_box</i></button>
-        <button style="font-size:24px">Rap <i class="material-icons">check_box</i></button>
+        <button id="g1" onclick="check(1)" style="font-size:24px"> Pop <i  id="check1" class="material-icons"></i></button>
+        <button id="g2" style="font-size:24px" onclick="check(2)">Rock <i id="check2" class="material-icons"></i></button>
+        <button id="g3" style="font-size:24px" onclick="check(3)">Jazz <i id="check3" class="material-icons"></i></button>
+        <button id="g4" style="font-size:24px" onclick="check(4)">Metal <i id="check4" class="material-icons"></i></button>
+        <button id="g5" style="font-size:24px" onclick="check(5)">Reggae <i id="check5" class="material-icons"></i></button>
+        <button id="g6" style="font-size:24px" onclick="check(6)">Rap <i  id="check6" class="material-icons"></i></button>
       </div>
   </body>
 </html>

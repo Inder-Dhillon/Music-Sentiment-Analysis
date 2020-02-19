@@ -6,8 +6,10 @@ from django.core import serializers
 # Create your views here.
 def create_title(request):   
         title = request.GET.get("title")
-        if title:
-            Song.objects.update_or_create(title=title)
+        artist = request.GET.get("title")
+        lyric = request.GET.get("lyric")
+        if title and artist and lyric:
+            Song.objects.update_or_create(title=title,defaults={"artist":artist,"lyric":lyric})
             return HttpResponse(f"Title: {title} created.")
         else:
             return HttpResponse(f"Title is empty!")

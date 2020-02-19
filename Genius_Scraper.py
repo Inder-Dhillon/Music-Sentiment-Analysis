@@ -16,7 +16,6 @@ def find_song(song_name, artist):
     return (res['response']['hits'][0]['result']['url'])
 
 def get_lyrics(url):
-    url = find_song(title, artist)
     only_div = SoupStrainer('div', {"class": "lyrics"})
     scrape = get(url).text
     soup = BeautifulSoup(scrape, 'lxml', parse_only=only_div)

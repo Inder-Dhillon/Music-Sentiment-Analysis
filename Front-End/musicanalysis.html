@@ -4,16 +4,20 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="musicanalysis.js"></script>
+
   </head>
   <body>
     <div class="container p-3 my-3 bg-dark text-white">
         <h1>MODD SENTIMENTS ANALYSIS</h1>
         <br>
+        <div id="change">
         <p>Hello</p>
         <br>
         <p>Please indicate mood for music selection</p>
-        <button style="font-size:24px"> <i class="material-icons" style="font-size:48px;color:green">mood</i>
-            <button style="font-size:24px"> <i class="material-icons" style="font-size:48px;color:red">mood_bad</i>
+        <button id="good" style="font-size:24px" onclick="fun1()"> <i class="material-icons" style="font-size:48px;color:green">mood</i>
+            <button id="bad" style="font-size:24px" onclick="fun2()"> <i class="material-icons" style="font-size:48px;color:red">mood_bad</i>
+        </div>
         </div>
   </body>
 </html>

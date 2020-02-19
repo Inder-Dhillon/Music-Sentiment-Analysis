@@ -19,12 +19,15 @@
         <button id="good" style="font-size:24px" onclick="fun1()"> <i class="material-icons" style="font-size:48px;color:green">mood</i>
             <button id="bad" style="font-size:24px" onclick="fun2()"> <i class="material-icons" style="font-size:48px;color:red">mood_bad</i>
         </div>
-        <button id="g1" onclick="check(1)" style="font-size:24px"> Pop <i  id="check1" class="material-icons"></i></button>
-        <button id="g2" style="font-size:24px" onclick="check(2)">Rock <i id="check2" class="material-icons"></i></button>
-        <button id="g3" style="font-size:24px" onclick="check(3)">Jazz <i id="check3" class="material-icons"></i></button>
-        <button id="g4" style="font-size:24px" onclick="check(4)">Metal <i id="check4" class="material-icons"></i></button>
-        <button id="g5" style="font-size:24px" onclick="check(5)">Reggae <i id="check5" class="material-icons"></i></button>
-        <button id="g6" style="font-size:24px" onclick="check(6)">Rap <i  id="check6" class="material-icons"></i></button>
+        <br>
+        <button id="g1" onclick="check(1)" style="font-size:24px" onclick="call_songs(this.id)"> Pop <i  id="check1" class="material-icons"></i></button>
+        <button id="g2" style="font-size:24px" onclick="check(2)" onclick="call_songs(this.id)">Rock <i id="check2" class="material-icons"></i></button>
+        <button id="g3" style="font-size:24px" onclick="check(3)" onclick="call_songs(this.id)">Jazz <i id="check3" class="material-icons"></i></button>
+        <button id="g4" style="font-size:24px" onclick="check(4)" onclick="call_songs(this.id)">Metal <i id="check4" class="material-icons"></i></button>
+        <button id="g5" style="font-size:24px" onclick="check(5)" onclick="call_songs(this.id)">Reggae <i id="check5" class="material-icons"></i></button>
+        <button id="g6" style="font-size:24px" onclick="check(6)" onclick="call_songs(this.id)" >Rap <i  id="check6" class="material-icons"></i></button>
+        <br></br>
+        <button id="enter" style="font-size:24px">Enter</button>
       </div>
   </body>
 </html>
